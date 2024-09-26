@@ -29,7 +29,7 @@ historySect.style.display = 'none';
 
 
 
-// **********************************************
+
 // Function to show the modal
 function showCongratsModal() {
   document.getElementById('CongratsModal').classList.remove('hidden');
@@ -41,33 +41,28 @@ document.getElementById('closeModalBtn').addEventListener('click', function() {
 });
 
 
-// *********************************************
+
+
 // Function to update the donation history
 function showHistory(purpose, amount) {
   const historySection = document.getElementById('donationHistoryList');
   
-  // Create a new list item for the history
   const newHistoryItem = document.createElement('li');
   newHistoryItem.classList.add('bg-white', 'p-4', 'mb-2', 'rounded-lg', 'shadow-md');
   
-  // Get the current date and time
   const currentDate = new Date();
   const dateString = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', hour12: false });
   
-  // Add the donation info to the new list item
   newHistoryItem.innerHTML = `
     <strong>${amount} BDT is Donated for ${purpose}</strong><br>
     Date: ${dateString} (Bangladesh Standard Time)
   `;
-  
-  // Prepend the new history item to the history list
+
   historySection.prepend(newHistoryItem);
 }
 
 
 
-
-// ******************************
 // creating a common function
 function donateNowButton(donationAmountInputID, totalDonationID){
   let availableBalance = parseFloat(document.getElementById('balance').innerText)
@@ -92,7 +87,7 @@ function donateNowButton(donationAmountInputID, totalDonationID){
       purpose = 'flood at Noakhali, Bangladesh'
     }else if (totalDonationID == 'total-donation-feni'){
       purpose = 'flood relief at Feni, Bangladesh'
-    }else{purpose="Injured in the Quota Movement"}
+    }else{purpose="injured in the Quota Movement"}
 
     showHistory(purpose, donationAmount);
     
