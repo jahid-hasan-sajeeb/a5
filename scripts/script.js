@@ -118,4 +118,25 @@ document.getElementById('donate-now-quota').addEventListener('click', function()
 
 
 
+function showAnswer(index) {
+  const answers = document.querySelectorAll('.faq-answer');
+  const arrows = document.querySelectorAll('button span');
+  const currentAnswer = answers[index];
+  const currentArrow = arrows[index];
+
+  // Toggle the hidden class for the selected answer
+  currentAnswer.classList.toggle('hidden');
+
+  // Toggle the arrow direction
+  if (currentAnswer.classList.contains('hidden')) {
+    currentArrow.innerHTML = '&#9660;'; // Down arrow
+  } else {
+    currentArrow.innerHTML = '&#9650;'; // Up arrow
+  }
+}
+
+
+
+
+
 
