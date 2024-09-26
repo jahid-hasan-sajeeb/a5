@@ -92,6 +92,8 @@ function donateNowButton(donationAmountInputID, totalDonationID){
     showHistory(purpose, donationAmount);
     
 
+  }else{
+    alert("You don't have enough money");
   }
 }
 
