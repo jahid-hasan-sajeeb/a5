@@ -89,16 +89,14 @@ function donateNowButton(donationAmountInputID, totalDonationID){
     showCongratsModal();
 
     if (totalDonationID =='total-donation-noakhali'){
-      purpose = 'noakhali'
+      purpose = 'flood at Noakhali, Bangladesh'
     }else if (totalDonationID == 'total-donation-feni'){
-      purpose = 'feni'
-    }else{purpose="quota"}
+      purpose = 'flood relief at Feni, Bangladesh'
+    }else{purpose="Injured in the Quota Movement"}
 
     showHistory(purpose, donationAmount);
     
 
-  }else{
-    console.log("You don't have enough balance")
   }
 }
 
@@ -119,19 +117,19 @@ document.getElementById('donate-now-quota').addEventListener('click', function()
 
 
 function showAnswer(index) {
-  const answers = document.querySelectorAll('.faq-answer');
-  const arrows = document.querySelectorAll('button span');
-  const currentAnswer = answers[index];
-  const currentArrow = arrows[index];
+  const answer = document.querySelectorAll('.faq-answer');
+  const arrow = document.querySelectorAll('button span');
+  const currentAns = answer[index];
+  const ArrowDirection = arrow[index];
 
-  // Toggle the hidden class for the selected answer
-  currentAnswer.classList.toggle('hidden');
+  // Toggling hidden class to show or hide the answer
+  currentAns.classList.toggle('hidden');
 
-  // Toggle the arrow direction
-  if (currentAnswer.classList.contains('hidden')) {
-    currentArrow.innerHTML = '&#9660;'; // Down arrow
+  // Toggling the arrow direction up or down
+  if (currentAns.classList.contains('hidden')) {
+    ArrowDirection.innerHTML = '&#9660;'; 
   } else {
-    currentArrow.innerHTML = '&#9650;'; // Up arrow
+    ArrowDirection.innerHTML = '&#9650;'; 
   }
 }
 

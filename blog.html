@@ -54,10 +54,12 @@
                 <span class="text-gray-600">&#9660;</span>
             </button>
             <p class="faq-answer hidden text-lg text-gray-700 pl-4">
-                The DOM is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.
+                An interface for programming that lets you work with and modify the content and structure of web pages
+                is called the Document Object Model (DOM). All HTML elements are represented as nodes in a tree that can
+                be accessed and modified using JavaScript, and this is how the webpage is shown.
             </p>
         </div>
-        
+
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
             <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
                 onclick="showAnswer(1)">
@@ -65,10 +67,11 @@
                 <span class="text-gray-600">&#9660;</span>
             </button>
             <p class="faq-answer hidden text-lg text-gray-700 pl-4">
-                You can select an element using various methods such as `getElementById()`, `querySelector()`, or `getElementsByClassName()` in JavaScript.
+                You can select an element using various methods such as `getElementById()`, `querySelector()`, or
+                `getElementsByClassName()` in JavaScript.
             </p>
         </div>
-        
+
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
             <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
                 onclick="showAnswer(2)">
@@ -76,10 +79,12 @@
                 <span class="text-gray-600">&#9660;</span>
             </button>
             <p class="faq-answer hidden text-lg text-gray-700 pl-4">
-                Event delegation allows you to avoid adding event listeners to specific nodes. Instead, the event listener is added to a parent element, leveraging event bubbling.
+                In the context of the DOM, event delegation is a technique that lets you add individual listeners to
+                numerous child components and instead use a single event listener at a higher level in the DOM tree to
+                manage events more efficiently.
             </p>
         </div>
-        
+
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
             <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
                 onclick="showAnswer(3)">
@@ -87,12 +92,20 @@
                 <span class="text-gray-600">&#9660;</span>
             </button>
             <p class="faq-answer hidden text-lg text-gray-700 pl-4">
-                You can manipulate an element's attributes using methods like `setAttribute()` or `removeAttribute()`, and styles can be modified by accessing the `style` property in JavaScript.
+                You can manipulate an element's attributes and styles in the DOM using JavaScript:
+
+                Attributes:
+
+                Get an Attribute: Use getAttribute() to retrieve an attribute's value (e.g., href, src).
+                Set an Attribute: Use setAttribute() to change an attribute's value.
+                Remove an Attribute: Use removeAttribute() to delete an attribute.
+                 
+                you can also use styles in css. These methods enable dynamic updates to the content and appearance of elements on a webpage.
             </p>
         </div>
-        
+
     </main>
-<script src="scripts/script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
