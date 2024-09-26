@@ -27,16 +27,19 @@
 </head>
 
 <body>
-    <header>
+    <!-- Navbar Section -->
+    <header class=" sticky top-0">
+
         <section class="flex justify-around items-center bg-orange-50 shadow-md">
-            <div class="my-6 bg-lime-300 rounded-xl ">
-                <a class="text-xl font-bold font-lexend px-8 py-3 block" href="https://jahid-hasan-sajeeb.github.io/index.html">home</a>
+            <div class="my-6 bg-lime-300 rounded-xl ml-6">
+                <a class="text-xl font-bold font-lexend px-8 py-3 block"
+                    href="https://jahid-hasan-sajeeb.github.io/assignment-5/blog.html">Blog</a>
             </div>
-            <div class="flex items-center gap-5 my-6">
+            <div class="flex flex-col md:flex-row items-center gap-5 my-6">
                 <img src="assets/logo.png" alt="">
-                <h2 class="text-2xl font-bold font-lexend">Donate Bangladesh</h2>
+                <h2 class="text-lg md:text-2xl font-bold font-lexend text-center">Donate Bangladesh</h2>
             </div>
-            <div class="flex items-center gap-2 my-6">
+            <div class="flex items-center gap-2 my-6 mr-12">
                 <img src="assets/coin.png" alt="">
                 <h2 id="balance" class="text-xl font-bold font-lexend text-gray-600">5500</h2>
                 <p class="text-xl font-semibold font-lexend text-gray-600">BDT</p>
@@ -44,11 +47,11 @@
         </section>
     </header>
 
-    <main class="m-28 max-w-5xl">
-        <h2 class="text-4xl font-bold font-lexend mb-10">Important FAQ</h2>
+    <main class="m-10 md:m-28 max-w-5xl">
+        <h2 class="text-2xl md:text-4xl font-bold font-lexend mb-10">Important FAQ</h2>
 
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
-            <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
+            <button class="flex justify-between items-center w-full text-left  font-bold text-lg md:text-xl font-lexend py-3"
                 onclick="showAnswer(0)">
                 What is the Document Object Model (DOM)?
                 <span class="text-gray-600">&#9660;</span>
@@ -61,7 +64,7 @@
         </div>
 
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
-            <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
+            <button class="flex justify-between items-center w-full text-left  font-bold text-lg md:text-xl font-lexend py-3"
                 onclick="showAnswer(1)">
                 How do you select an element from the DOM?
                 <span class="text-gray-600">&#9660;</span>
@@ -73,7 +76,7 @@
         </div>
 
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
-            <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
+            <button class="flex justify-between items-center w-full text-left  font-bold text-lg md:text-xl font-lexend py-3"
                 onclick="showAnswer(2)">
                 What is event delegation in the context of the DOM, and why is it useful?
                 <span class="text-gray-600">&#9660;</span>
@@ -86,7 +89,7 @@
         </div>
 
         <div class="border-2 border-gray-300 p-4 mb-4 rounded-lg">
-            <button class="flex justify-between items-center w-full text-left  font-bold text-xl font-lexend py-3"
+            <button class="flex justify-between items-center w-full text-left  font-bold text-lg md:text-xl font-lexend py-3"
                 onclick="showAnswer(3)">
                 How do you manipulate an element's attributes and styles using the DOM?
                 <span class="text-gray-600">&#9660;</span>

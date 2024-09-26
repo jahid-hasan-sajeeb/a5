@@ -34,14 +34,15 @@
     <header class=" sticky top-0">
 
         <section class="flex justify-around items-center bg-orange-50 shadow-md">
-            <div class="my-6 bg-lime-300 rounded-xl ">
-                <a class="text-xl font-bold font-lexend px-8 py-3 block" href="https://jahid-hasan-sajeeb.github.io/assignment-5/blog.html">Blog</a>
+            <div class="my-6 bg-lime-300 rounded-xl ml-6">
+                <a class="text-xl font-bold font-lexend px-8 py-3 block"
+                    href="https://jahid-hasan-sajeeb.github.io/assignment-5/blog.html">Blog</a>
             </div>
-            <div class="flex items-center gap-5 my-6">
+            <div class="flex flex-col md:flex-row items-center gap-5 my-6">
                 <img src="assets/logo.png" alt="">
-                <h2 class="text-2xl font-bold font-lexend">Donate Bangladesh</h2>
+                <h2 class="text-lg md:text-2xl font-bold font-lexend text-center">Donate Bangladesh</h2>
             </div>
-            <div class="flex items-center gap-2 my-6">
+            <div class="flex items-center gap-2 my-6 mr-12">
                 <img src="assets/coin.png" alt="">
                 <h2 id="balance" class="text-xl font-bold font-lexend text-gray-600">5500</h2>
                 <p class="text-xl font-semibold font-lexend text-gray-600">BDT</p>
@@ -49,13 +50,11 @@
         </section>
 
         <section class="flex justify-center items-center gap-5 bg-white/90 pt-8">
-            <div id="donation-btn"
-                class="mt-6 mb-10 border-2 border-gray-200 bg-lime-300  rounded-xl font-lexend">
+            <div id="donation-btn" class="mt-6 mb-10 border-2 border-gray-200 bg-lime-300  rounded-xl font-lexend">
                 <h2 class="text-xl font-bold cursor-pointer px-10 py-3">Donation</h2>
             </div>
 
-            <div id="history-btn"
-                class="mt-6 mb-10 border-2 border-gray-200 bg-gray-100  rounded-xl font-lexend">
+            <div id="history-btn" class="mt-6 mb-10 border-2 border-gray-200 bg-gray-100  rounded-xl font-lexend">
                 <h2 class="text-xl font-bold cursor-pointer px-10 py-3">History</h2>
             </div>
         </section>
@@ -63,83 +62,101 @@
 
     <main>
         <!-- Donation Section -->
-        <section id="donation-section" class="flex flex-col items-center gap-6">
-            <div class="flex max-w-7xl bg-white border-2 border-gray-100 rounded-lg shadow-lg overflow-hidden">
+        <section id="donation-section" class="flex flex-col items-center gap-6 mb-10">
+            <div
+                class="flex flex-col md:flex-row mx-8 md:mx-0 max-w-7xl bg-white border-2 border-gray-100 rounded-lg shadow-lg overflow-hidden">
                 <img src="assets/noakhali.png" alt="Flood in Noakhali" class="w-full h-full object-cover p-8">
-                <div class="py-8 pr-8">
-                    <div class="flex items-center justify-center gap-2 bg-gray-300 px-4 py-2 rounded-xl w-48 mb-6">
-                        <img src="assets/coin.png" alt="">
-                        <h2 id="total-donation-noakhali" class="text-lg font-bold font-lexend text-gray-600">15000</h2>
-                        <p class="text-lg font-bold font-lexend text-gray-600">BDT</p>
-                    </div>
-                    <h2 class="text-xl font-bold font-lexend">Donate for Flood at Noakhali, Bangladesh</h2>
-                    <p class="mt-4 text-gray-600">Noakhali has been severely impacted by recent floods, causing
-                        widespread destruction to homes, infrastructure, and essential services. Thousands of families
-                        have been displaced, with many losing their homes, belongings, and access to clean water and
-                        food. The situation is dire, and the affected communities are in urgent need of immediate
-                        assistance.
+                <div class="pl-8 md:pl-0">
+                    <div class="py-8 pr-8">
+                        <div class="flex items-center justify-center gap-2 bg-gray-300 px-4 py-2 rounded-xl w-48 mb-6">
+                            <img src="assets/coin.png" alt="">
+                            <h2 id="total-donation-noakhali" class="text-lg font-bold font-lexend text-gray-600">15000
+                            </h2>
+                            <p class="text-lg font-bold font-lexend text-gray-600">BDT</p>
+                        </div>
+                        <h2 class="text-xl font-bold font-lexend">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="mt-4 text-gray-600">Noakhali has been severely impacted by recent floods, causing
+                            widespread destruction to homes, infrastructure, and essential services. Thousands of
+                            families
+                            have been displaced, with many losing their homes, belongings, and access to clean water and
+                            food. The situation is dire, and the affected communities are in urgent need of immediate
+                            assistance.
 
-                        Your donation can make a significant difference by providing essential supplies like food, clean
-                        water, medicine, and shelter to those in need. </p>
-                    <div class="mt-5">
-                        <input type="number" id="donation-amount-noakhali" placeholder="Write Donation Amount"
-                            class="border border-gray-300 p-3 rounded-md w-full">
+                            Your donation can make a significant difference by providing essential supplies like food,
+                            clean
+                            water, medicine, and shelter to those in need. </p>
+                        <div class="mt-5">
+                            <input type="number" id="donation-amount-noakhali" placeholder="Write Donation Amount"
+                                class="border border-gray-300 p-3 rounded-md w-full">
+                        </div>
+                        <button id="donate-now-noakhali"
+                            class="bg-lime-300 hover:bg-lime-500 text-black font-bold font-lexend py-3 px-4 rounded-lg mt-4 w-full">Donate
+                            Now</button>
                     </div>
-                    <button id="donate-now-noakhali"
-                        class="bg-lime-300 hover:bg-lime-500 text-black font-bold font-lexend py-3 px-4 rounded-lg mt-4 w-full">Donate
-                        Now</button>
                 </div>
             </div>
 
-            <div class="flex max-w-7xl bg-white border-2 border-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <div
+                class="flex flex-col md:flex-row mx-8 md:mx-0 max-w-7xl bg-white border-2 border-gray-100 rounded-lg shadow-lg overflow-hidden">
                 <img src="assets/noakhali.png" alt="Flood in Noakhali" class="w-full h-full object-cover p-8">
-                <div class="py-8 pr-8">
-                    <div class="flex items-center justify-center gap-2 bg-gray-300 px-4 py-2 rounded-xl w-48 mb-6">
-                        <img src="assets/coin.png" alt="">
-                        <h2 id="total-donation-feni" class="text-lg font-bold font-lexend text-gray-600">25000 BDT</h2>
-                    </div>
-                    <h2 class="text-xl font-bold font-lexend">Donate for Flood Relief in Feni,Bangladesh</h2>
-                    <p class="mt-4 text-gray-600">The recent floods in Feni have caused massive destruction, leaving
-                        communities in distress and thousands of families displaced. Homes have been washed away, crops
-                        destroyed, and access to essential resources like food, clean water, and medical aid has been
-                        severely impacted.
+                <div class="pl-8 md:pl-0">
+                    <div class="py-8 pr-8">
+                        <div class="flex items-center justify-center gap-2 bg-gray-300 px-4 py-2 rounded-xl w-48 mb-6">
+                            <img src="assets/coin.png" alt="">
+                            <h2 id="total-donation-feni" class="text-lg font-bold font-lexend text-gray-600">25000 BDT
+                            </h2>
+                        </div>
+                        <h2 class="text-xl font-bold font-lexend">Donate for Flood Relief in Feni,Bangladesh</h2>
+                        <p class="mt-4 text-gray-600">The recent floods in Feni have caused massive destruction, leaving
+                            communities in distress and thousands of families displaced. Homes have been washed away,
+                            crops
+                            destroyed, and access to essential resources like food, clean water, and medical aid has
+                            been
+                            severely impacted.
 
-                        Your donation will provide critical relief to those affected by the floods. With your
-                        contribution, we can deliver essential supplies such as food, clean drinking water, medicine,
-                        and temporary shelter to families who have lost everything.
-                    </p>
-                    <div class="mt-5">
-                        <input type="number" id="donation-amount-feni" placeholder="Write Donation Amount"
-                            class="border border-gray-300 p-3 rounded-md w-full">
+                            Your donation will provide critical relief to those affected by the floods. With your
+                            contribution, we can deliver essential supplies such as food, clean drinking water,
+                            medicine,
+                            and temporary shelter to families who have lost everything.
+                        </p>
+                        <div class="mt-5">
+                            <input type="number" id="donation-amount-feni" placeholder="Write Donation Amount"
+                                class="border border-gray-300 p-3 rounded-md w-full">
+                        </div>
+                        <button id="donate-now-feni"
+                            class="bg-lime-300 hover:bg-lime-500 text-black font-bold font-lexend py-3 px-4 rounded-lg mt-4 w-full">Donate
+                            Now</button>
                     </div>
-                    <button id="donate-now-feni"
-                        class="bg-lime-300 hover:bg-lime-500 text-black font-bold font-lexend py-3 px-4 rounded-lg mt-4 w-full">Donate
-                        Now</button>
                 </div>
             </div>
 
-            <div class="flex max-w-7xl bg-white border-2 border-gray-100 rounded-lg shadow-lg overflow-hidden">
+            <div
+                class="flex flex-col md:flex-row mx-8 md:mx-0 max-w-7xl bg-white border-2 border-gray-100 rounded-lg shadow-lg overflow-hidden">
                 <img src="assets/noakhali.png" alt="Flood in Noakhali" class="w-full h-full object-cover p-8">
-                <div class="py-8 pr-8">
-                    <div class="flex items-center justify-center gap-2 bg-gray-300 px-4 py-2 rounded-xl w-48 mb-6">
-                        <img src="assets/coin.png" alt="">
-                        <h2 id="total-donation-quota" class="text-lg font-bold font-lexend text-gray-600">78000 BDT</h2>
-                    </div>
-                    <h2 class="text-xl font-bold font-lexend">Aid for Injured in the Quota Movement</h2>
-                    <p class="mt-4 text-gray-600">The Quota Movement in Bangladesh has been a pivotal moment in the
-                        country’s history, marked by widespread protests and unrest. During the movement, many
-                        individuals were injured, some severely, as they stood up for their rights and voiced their
-                        concerns. These brave individuals are now in need of urgent medical assistance, rehabilitation,
-                        and emotional support as they recover from the injuries sustained during the protests.
+                <div class="pl-8 md:pl-0">
+                    <div class="py-8 pr-8">
+                        <div class="flex items-center justify-center gap-2 bg-gray-300 px-4 py-2 rounded-xl w-48 mb-6">
+                            <img src="assets/coin.png" alt="">
+                            <h2 id="total-donation-quota" class="text-lg font-bold font-lexend text-gray-600">78000 BDT
+                            </h2>
+                        </div>
+                        <h2 class="text-xl font-bold font-lexend">Aid for Injured in the Quota Movement</h2>
+                        <p class="mt-4 text-gray-600">The Quota Movement in Bangladesh has been a pivotal moment in the
+                            country’s history, marked by widespread protests and unrest. During the movement, many
+                            individuals were injured, some severely, as they stood up for their rights and voiced their
+                            concerns. These brave individuals are now in need of urgent medical assistance,
+                            rehabilitation,
+                            and emotional support as they recover from the injuries sustained during the protests.
 
-                        Your donation can make a profound impact in helping the injured recover. </p>
-                    <div class="mt-5">
-                        <input type="number" id="donation-amount-quota" placeholder="Write Donation Amount"
-                            class="border border-gray-300 p-3 rounded-md w-full">
+                            Your donation can make a profound impact in helping the injured recover. </p>
+                        <div class="mt-5">
+                            <input type="number" id="donation-amount-quota" placeholder="Write Donation Amount"
+                                class="border border-gray-300 p-3 rounded-md w-full">
+                        </div>
+                        <button id="donate-now-quota"
+                            class="bg-lime-300 hover:bg-lime-500 text-black font-bold font-lexend py-3 px-4 rounded-lg mt-4 w-full">Donate
+                            Now</button>
                     </div>
-                    <button id="donate-now-quota"
-                        class="bg-lime-300 hover:bg-lime-500 text-black font-bold font-lexend py-3 px-4 rounded-lg mt-4 w-full">Donate
-                        Now</button>
                 </div>
             </div>
 
@@ -160,9 +177,9 @@
 
         <!-- history section -->
         <section>
-            <div id="history-section" class="flex justify-center flex-col">
-                <h3 class="text-2xl font-bold mb-4 text-center">Donation History</h3>
-                <ul id="donationHistoryList" class="bg-gray-50 p-4 rounded-lg shadow-md">
+            <div id="history-section" class="flex flex-col">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 text-center">Donation History</h3>
+                <ul id="donationHistoryList" class="mx-8 md:mx-0 bg-gray-50 p-4 rounded-lg shadow-md">
                     <!-- Place for storing history -->
                 </ul>
             </div>

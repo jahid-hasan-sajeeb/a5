@@ -48,7 +48,7 @@ function showHistory(purpose, amount) {
   const historySection = document.getElementById('donationHistoryList');
   
   const newHistoryItem = document.createElement('li');
-  newHistoryItem.classList.add('bg-white', 'p-4', 'mb-2', 'rounded-lg', 'shadow-md');
+  newHistoryItem.classList.add('bg-white', 'p-4', 'mb-2', 'rounded-lg', 'shadow-md','text-lg');
   
   const currentDate = new Date();
   const dateString = currentDate.toLocaleString('en-GB', { timeZone: 'Asia/Dhaka', hour12: false });
