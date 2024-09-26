@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flood Donation Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-gray-100">
+
+  <!-- Navbar Section -->
+  <nav class="bg-orange-50 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      
+      <!-- Blog Button -->
+      <a href="blog.html" class="text-gray-700 font-semibold hover:text-green-500">
+        Blog
+      </a>
+
+      <!-- Logo in the Center -->
+      <div class="flex-grow text-center flex">
+        <img src="assets/logo.png" alt="Donate Bangladesh logo" class="mx-auto h-10">
+        <h2>Donate Bangladesh</h2>
+      </div>
+
+      <!-- Right side: Donation/History Buttons and Balance -->
+      <div class="flex items-center space-x-4">
+        <!-- Donation and History Buttons -->
+        <button id="donation-btn" class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 active">Donation</button>
+        <button id="history-btn" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-300">History</button>
+
+        <!-- Account Balance -->
+        <div class="flex items-center font-semibold text-gray-700">
+          <span class="mr-2">🪙</span>
+          <span id="balance-amount">5500 BDT</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content Section -->
+  <section id="content" class="container mx-auto mt-6">
+    <!-- Dynamic content based on button clicks -->
+  </section>
+
+  <script src="../assignment-5/scripts/script.js"></script>
+</body>
+</html>
